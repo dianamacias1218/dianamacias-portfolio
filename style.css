@@ -1,0 +1,23 @@
+*{
+    background-color:#FA9F77 ;
+
+}
+
+.name {
+    color:#D63300;
+    font-family:monospace;
+    text-shadow: 2px 2px #F3724A;
+    text-align: left;
+}
+
+.centerimage {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+}
+
+.selfie{
+    width: 100%;
+    height: 288px;
+}
+ 
