@@ -1,6 +1,12 @@
 *{
     background-color:#FA9F77 ;
+    box-sizing: border-box;
 
+}
+
+.body { 
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .name {
@@ -8,16 +14,197 @@
     font-family:monospace;
     text-shadow: 2px 2px #F3724A;
     text-align: left;
+    padding-bottom: .5in;
 }
 
-.centerimage {
+.navigationbar {
+    display: flex; 
+    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #25211F ;
+    text-shadow: 2px 2px #F3724A;
+    font-family: monospace;
+    font-size: large;
+    font-weight: 800;
+    text-decoration: none;
+    width: 25%;
+    float: right;
+}
+
+a.aboutmenav:link
+{
+    color: #D63300;
+    text-decoration: none;
+}
+a.aboutmenav:visited
+{
+   color: #D63300;
+   text-decoration: none;
+}
+a.aboutmenav:hover
+{
+   color: #25211F;
+   text-decoration: none;
+}
+a.aboutmenav:active
+{
+   color: #D63300;
+   text-decoration: none;
+}
+
+a.projectnav:link
+{
+    color: #D63300;
+    text-decoration: none;
+}
+a.projectnav:visited
+{
+   color: #D63300;
+   text-decoration: none;
+}
+a.projectnav:hover
+{
+   color: #25211F;
+   text-decoration: none;
+}
+a.projectnav:active
+{
+   color: #D63300;
+   text-decoration: none;
+}
+
+a.contactnav:link
+{
+    color: #D63300;
+    text-decoration: none;
+}
+a.contactnav:visited
+{
+   color: #D63300;
+   text-decoration: none;
+}
+a.contactnav:hover
+{
+   color: #25211F;
+   text-decoration: none;
+}
+a.contactnav:active
+{
+   color: #D63300;
+   text-decoration: none;
+}
+
+li { 
+    display: inline;
+    text-align: right;
+}
+
+.selfie {
     display: flex;
     justify-content: center;
-    height: 800px;
+    height: 200px;
 }
 
-.selfie{
-    width: 100%;
-    height: 288px;
+.flexcontainer {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    flex-direction: column;
+    font-size: .5in;
+    font-family: monospace;
+    color: #D63300;
+    text-shadow: 2px 2px #F3724A;
+    line-height: 1in;
+    width: 75%;
+    float: left;
 }
- 
+.pages header{
+   padding: 20px;
+}
+
+.pages p {
+   text-align: left;
+   font-size: medium;
+   line-height: normal;
+}
+
+.pages img {
+   width: min-content;
+   height: 200px;
+}
+
+.pages li {
+   text-align: end;
+   font-size: medium;
+}
+
+a.email:link
+{
+    color: #D63300;
+    text-decoration: none;
+}
+a.email:visited
+{
+   color: #D63300;
+   text-decoration: none;
+}
+a.email:hover
+{
+   color: #25211F;
+   text-decoration: none;
+}
+a.email:active
+{
+   color: #D63300;
+   text-decoration: none;
+}
+
+a.linkedin:link
+{
+    color: #D63300;
+    text-decoration: none;
+}
+a.linkedin:visited
+{
+   color: #D63300;
+   text-decoration: none;
+}
+a.linkedin:hover
+{
+   color: #25211F;
+   text-decoration: none;
+}
+a.linkedin:active
+{
+   color: #D63300;
+   text-decoration: none;
+}
+
+a.github:link
+{
+    color: #D63300;
+    text-decoration: none;
+}
+a.github:visited
+{
+   color: #D63300;
+   text-decoration: none;
+}
+a.github:hover
+{
+   color: #25211F;
+   text-decoration: none;
+}
+a.github:active
+{
+   color: #D63300;
+   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+   main,
+   nav {
+     flex-direction: column;
+   }
+ }
